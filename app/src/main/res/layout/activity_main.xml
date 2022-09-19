@@ -23,6 +23,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/ButtonLesGo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:text="Погнали"
+        android:textSize="100px"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_editor_absoluteX="100sp"
+        app:layout_editor_absoluteY="600sp"
+        app:rippleColor="#F1F1F1"
+        android:textColor="@color/white"
+        />
+
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
         android:layout_width="wrap_content"
