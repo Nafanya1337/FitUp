@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".step4"
+    android:background="@color/white">
+
+  <ImageView
+      android:id="@+id/next4"
+      android:layout_width="100dp"
+      android:layout_height="80dp"
+      android:src="@drawable/ic_button_last"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.954"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.976" />
+
+  <TextView
+      android:id="@+id/text1"
+      android:layout_width="match_parent"
+      android:layout_height="36sp"
+      android:layout_alignParentStart="true"
+      android:layout_alignParentTop="true"
+      android:layout_marginLeft="20dp"
+      android:layout_marginTop="412dp"
+      android:fontFamily="@font/poppins_regular"
+      android:gravity="top"
+      android:lineSpacingExtra="0sp"
+      android:text="@string/Step4_Text1"
+      android:textColor="@color/black"
+      android:textSize="24sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.177"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+
+  <TextView
+      android:id="@+id/textView2"
+      android:layout_width="match_parent"
+      android:layout_height="200sp"
+      android:layout_marginStart="20dp"
+      android:fontFamily="@font/poppins_regular"
+      android:gravity="top"
+      android:text="@string/Step4_Text2"
+      android:textColor="@color/grey"
+      android:textSize="18sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/text1" />
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="464dp"
+      android:layout_height="400dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0"
+      app:srcCompat="@drawable/ic_vector2" />
+
+  <ImageView
+      android:id="@+id/imageView2"
+      android:layout_width="288dp"
+      android:layout_height="401dp"
+      android:layout_marginTop="28dp"
+      android:src="@drawable/ic_women2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.495"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

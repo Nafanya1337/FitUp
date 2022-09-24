@@ -4,10 +4,35 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.338" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/background.xml" value="0.338" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/bg.xml" value="0.197" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/bg_header.xml" value="0.167" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/bg_step2.xml" value="0.317" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_bg_2_.xml" value="0.338" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_bg_3_.xml" value="0.338" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_button.xml" value="0.3145" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_button__1_.xml" value="0.338" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_button__2_.xml" value="0.185" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_button_last.xml" value="0.185" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_frame__1_.xml" value="0.338" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_frame__last.xml" value="0.338" />
         <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.338" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_man_2_.xml" value="0.338" />
         <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_rectangle_5853buttonwelcome.xml" value="0.3075" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_runner_2_.xml" value="0.185" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_step1.xml" value="0.67" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_step2.xml" value="0.338" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_vector.xml" value="0.338" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_vector2.xml" value="0.338" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_welcome_screen___2__1_.xml" value="0.338" />
         <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout-v28/activity_main.xml" value="0.31197916666666664" />
-        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout/activity_main.xml" value="0.31197916666666664" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout-v31/activity_step1.xml" value="0.3109375" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout/activity_home.xml" value="0.3145833333333333" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout/activity_step1.xml" value="0.41379310344827586" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout/activity_step2.xml" value="0.33" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout/activity_step3.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout/activity_step4.xml" value="0.25" />
       </map>
     </option>
   </component>
@@ -16,5 +41,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.33" />
+      </ProjectState>
+    </option>
   </component>
 </project>

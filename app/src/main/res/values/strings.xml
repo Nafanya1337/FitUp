@@ -1,4 +1,22 @@
 <resources>
     <string name="app_name">FitUp</string>
     <string name="Go">Приступим</string>
+
+    <string name="Step1">Шаг 1</string>
+    <string name="Step1_Text1">Отслеживайте свою цель</string>
+    <string name="Step1_Text2">Не волнуйтесь, если у вас возникнут проблемы с определением ваших целей, мы можем помочь вам их определить и отслеживать</string>
+
+    <string name="Step2">Шаг 2</string>
+    <string name="Step2_Text1">Оставайтесь в форме</string>
+    <string name="Step2_Text2">Давай продолжать работать, чтобы достичь своих целей, это трудно только временно, если ты сдашься сейчас, тебе трудно всегда</string>
+
+    <string name="Step3">Шаг 3</string>
+    <string name="Step3_Text1">Следите за питанием</string>
+    <string name="Step3_Text2">Начните вести здоровый образ жизни вместе с нами, мы можем определить ваш рацион на каждый день. Здоровое питание - это весело</string>
+
+    <string name="Step4">Шаг 4</string>
+    <string name="Step4_Text1">///</string>
+    <string name="Step4_Text2">Дёмин гей</string>
+
+
 </resources>
