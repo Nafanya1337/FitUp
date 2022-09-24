@@ -17,6 +17,8 @@
     <string name="Step4">Шаг 4</string>
     <string name="Step4_Text1">///</string>
     <string name="Step4_Text2">Дёмин гей</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>
