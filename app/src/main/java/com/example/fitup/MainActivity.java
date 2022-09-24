@@ -3,7 +3,7 @@ package com.example.fitup;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
+
 import android.view.*;
 import android.os.Bundle;
 import android.widget.ImageView;
