@@ -20,5 +20,14 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <!-- ДОМАШНЯЯ СТРАНИЦА!!!!!!!!!!!!! -->
+    <string name="banner1_text_normal">Ваш индекс массы тела в норме</string>
+    <string name="banner1_text_bad">Ваш индекс массы тела не в норме</string>
+    <string name="more">Подробнее</string>
+    <string name="goal">Сегодняшняя цель</string>
+
+
+
+
 
 </resources>

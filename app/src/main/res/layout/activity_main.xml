@@ -12,7 +12,7 @@
         android:id="@+id/fl_wrapper"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/bottom_navigation" />
+        android:layout_above="@id/bottom_navigation"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -24,5 +24,6 @@
         app:itemIconTint="@color/black"
         app:itemTextColor="@color/blue_linear"
         app:menu="@menu/bottom_navigation" />
+
 
 </RelativeLayout>
