@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/homeFragment"
+        android:title="Главная"
+        android:icon="@drawable/home_selector"
+        />
+    <item
+        android:id="@+id/fitFragment"
+        android:title="Упражнения"
+        android:icon="@drawable/fit_selector"/>
+    <item
+        android:id="@+id/foodFragment"
+        android:title="Еда"
+        android:icon="@drawable/food_selector"/>
+    <item
+        android:id="@+id/profileFragment"
+        android:title="Настройки"
+        android:icon="@drawable/profile_selector"/>
+
+
+</menu>

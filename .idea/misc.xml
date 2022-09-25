@@ -8,6 +8,11 @@
         <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/bg.xml" value="0.197" />
         <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/bg_header.xml" value="0.167" />
         <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/bg_step2.xml" value="0.317" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/fit_selector.xml" value="0.338" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/food_selector.xml" value="0.338" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/home_selector.xml" value="0.337" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_activity.xml" value="0.338" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_activity_active.xml" value="0.338" />
         <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_bg_2_.xml" value="0.338" />
         <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_bg_3_.xml" value="0.338" />
         <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_button.xml" value="0.3145" />
@@ -25,14 +30,21 @@
         <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_vector.xml" value="0.338" />
         <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_vector2.xml" value="0.338" />
         <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/ic_welcome_screen___2__1_.xml" value="0.338" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/drawable/profile_selector.xml" value="0.337" />
         <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout-v28/activity_main.xml" value="0.31197916666666664" />
         <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout-v31/activity_step1.xml" value="0.3109375" />
         <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout/activity_home.xml" value="0.3145833333333333" />
-        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout/activity_main.xml" value="0.3059244126659857" />
         <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout/activity_step1.xml" value="0.41379310344827586" />
         <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout/activity_step2.xml" value="0.33" />
         <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout/activity_step3.xml" value="0.33177083333333335" />
         <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout/activity_step4.xml" value="0.25" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout/fragment_fit.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout/fragment_food.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout/fragment_home.xml" value="0.31197916666666664" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout/fragment_home2.xml" value="0.3145833333333333" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/layout/fragment_profile.xml" value="0.33177083333333335" />
+        <entry key="..\:/Users/shmak/AndroidStudioProjects/FitUp/app/src/main/res/menu/bottom_navigation.xml" value="0.31197916666666664" />
       </map>
     </option>
   </component>
