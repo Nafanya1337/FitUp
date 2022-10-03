@@ -4,15 +4,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.Navigation;
-
 import android.content.Intent;
-
 import android.content.SharedPreferences;
 import android.content.pm.ActivityInfo;
-import android.view.*;
 import android.os.Bundle;
-import android.widget.ImageView;
 
 import com.example.fitup.databinding.ActivityMainBinding;
 import com.example.fitup.fragments.FitFragment;
@@ -20,7 +15,6 @@ import com.example.fitup.fragments.FoodFragment;
 import com.example.fitup.fragments.HomeFragment;
 import com.example.fitup.fragments.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(MainActivity.this, welcome.class);
             startActivity(intent);
         }
+
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
@@ -70,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    private void replaceFragment(Fragment fragment)
+    public void replaceFragment(Fragment fragment)
     {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();

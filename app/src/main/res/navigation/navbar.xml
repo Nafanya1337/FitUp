@@ -17,7 +17,7 @@
         tools:layout="@layout/fragment_profile" />
     <fragment
         android:id="@+id/foodFragment"
-        android:name="com.example.fitup.fragments.FoodFragment"
+        android:name="com.example.fitup.fragments.HomeFragment"
         android:label="fragment_food"
         tools:layout="@layout/fragment_food" />
     <fragment

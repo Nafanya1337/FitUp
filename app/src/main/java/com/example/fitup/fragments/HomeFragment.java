@@ -27,6 +27,7 @@ public class HomeFragment extends Fragment {
     private String mParam2;
 
     public HomeFragment() {
+        // Required empty public constructor
     }
 
     /**
@@ -35,7 +36,7 @@ public class HomeFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment HomeFragment.
+     * @return A new instance of fragment FoodFragment.
      */
     // TODO: Rename and change types and number of parameters
     public static HomeFragment newInstance(String param1, String param2) {

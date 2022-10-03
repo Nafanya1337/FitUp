@@ -26,8 +26,12 @@
     <string name="more">Подробнее</string>
     <string name="goal">Сегодняшняя цель</string>
 
+    <string name="calories">Калории</string>
+    <string name="steps">Шаги</string>
 
+    <string name="home_food_n_ready">Вы ещё не подобрали график приёма пищи</string>
+    <string name="home_food_ready">Ваш график приёма пищи на сегодня</string>
 
-
-
+    <string name="home_fit_n_ready">Вы ещё не подобрали график тренировки</string>
+    <string name="home_fit_ready">Ваш график тренировки на сегодня</string>
 </resources>
