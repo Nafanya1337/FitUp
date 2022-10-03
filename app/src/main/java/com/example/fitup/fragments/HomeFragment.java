@@ -1,14 +1,19 @@
 package com.example.fitup.fragments;
 
+
 import android.os.Bundle;
-
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
+import android.widget.ImageView;
 import com.example.fitup.R;
+import com.example.fitup.databinding.ActivityMainBinding;
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -16,6 +21,9 @@ import com.example.fitup.R;
  * create an instance of this fragment.
  */
 public class HomeFragment extends Fragment {
+
+    ImageView food_more, fit_more, mass_more, goal_more;
+    ActivityMainBinding binding;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -55,6 +63,59 @@ public class HomeFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        food_more = (ImageView) getView().findViewById(R.id.food_more);
+        food_more.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment = new FoodFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fl_wrapper, fragment);
+                fragmentTransaction.commit();
+            }
+        });
+
+        fit_more = (ImageView) getView().findViewById(R.id.fit_more);
+        fit_more.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment = new FitFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fl_wrapper, fragment);
+                fragmentTransaction.commit();
+            }
+        });
+
+        goal_more = (ImageView) getView().findViewById(R.id.goal_more);
+        goal_more.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment = new FitFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fl_wrapper, fragment);
+                fragmentTransaction.commit();
+            }
+        });
+
+        mass_more = (ImageView) getView().findViewById(R.id.mass_more);
+        mass_more.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment fragment = new FoodFragment();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fl_wrapper, fragment);
+                fragmentTransaction.commit();
+            }
+        });
     }
 
     @Override

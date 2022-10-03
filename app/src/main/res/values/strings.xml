@@ -34,4 +34,10 @@
 
     <string name="home_fit_n_ready">Вы ещё не подобрали график тренировки</string>
     <string name="home_fit_ready">Ваш график тренировки на сегодня</string>
+
+    <!-- Страница упражнений !!!!!!!!!!!! -->
+    <string name="workout_razminka">Разминка</string>
+    <string name="workout_razminka_time">20</string>
+    <integer name="workout_razminka_diff">30</integer> // сложность 30/100
+
 </resources>

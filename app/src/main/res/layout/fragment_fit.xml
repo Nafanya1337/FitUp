@@ -1,20 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.FitFragment">
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Упражнения"
-            android:gravity="center"
-            android:layout_centerInParent="true"
-            android:textColor="@color/black"/>
-    </RelativeLayout>
+        android:layout_height="match_parent"
+        android:background="@color/light_grey">
 
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:src="@drawable/workout_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="1.2" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="396dp"
+            android:layout_marginTop="68dp"
+            android:src="@drawable/workout_btn"
+            app:layout_constraintStart_toStartOf="@+id/imageView17"
+            app:layout_constraintTop_toTopOf="@+id/imageView17" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>

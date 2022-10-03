@@ -12,4 +12,5 @@
     <color name="pink">#C58BF2</color>
     <color name="grey">#7B6F72</color>
     <color name="light_grey">#F6F6F6</color>
+    <color name="light_grey_text">#A4A9AD</color>
 </resources>
