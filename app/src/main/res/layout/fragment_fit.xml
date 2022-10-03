@@ -15,7 +15,18 @@
             android:id="@+id/imageView17"
             android:layout_width="0dp"
             android:layout_height="200dp"
-            android:src="@drawable/workout_bg"
+            android:src="@drawable/ic_razminka_bg_svg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="1.2" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="0dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="116dp"
+            android:src="@drawable/ic_workout_down_bg"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -30,5 +41,15 @@
             android:src="@drawable/workout_btn"
             app:layout_constraintStart_toStartOf="@+id/imageView17"
             app:layout_constraintTop_toTopOf="@+id/imageView17" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="396dp"
+            android:layout_marginTop="188dp"
+            android:src="@drawable/workout_btn"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
