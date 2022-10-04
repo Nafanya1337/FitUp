@@ -1,6 +1,7 @@
 package com.example.fitup.fragments;
 
 
+import android.content.Context;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -10,6 +11,8 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import com.example.fitup.R;
 import com.example.fitup.databinding.ActivityMainBinding;
@@ -59,6 +62,7 @@ public class HomeFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -73,9 +77,11 @@ public class HomeFragment extends Fragment {
         food_more.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                view.startAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.animation));
                 Fragment fragment = new FoodFragment();
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
                 fragmentTransaction.replace(R.id.fl_wrapper, fragment);
                 fragmentTransaction.commit();
             }
