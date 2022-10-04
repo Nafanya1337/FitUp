@@ -1,15 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.HomeFragment">
+    tools:context=".fragments.HomeFragment"
+    >
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="Вкусно и точка"
-        android:gravity="center"
-        android:textColor="@color/black"/>
+        android:background="@color/light_grey"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <ImageView
+            android:id="@+id/imageView37"
+            android:layout_width="388dp"
+            android:layout_height="206dp"
+            android:layout_marginTop="148dp"
+            android:src="@drawable/bg_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.2555"
+            app:layout_constraintHorizontal_bias="0.695"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.9" />
+
+        <ImageView
+            android:id="@+id/imageView34"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="28dp"
+            android:scrollbarSize="40dp"
+            android:src="@drawable/search_bar_variant_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.555"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView36"
+            android:layout_width="355dp"
+            android:layout_height="163dp"
+            android:layout_marginTop="172dp"
+            android:src="@drawable/graphics_meal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.714"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
 </FrameLayout>

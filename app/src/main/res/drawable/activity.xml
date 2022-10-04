@@ -1,0 +1,113 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="379dp"
+    android:height="170dp"
+    android:viewportWidth="379"
+    android:viewportHeight="170">
+  <path
+      android:pathData="M2,40H95.75H189.5H243H377V120H2V40Z"
+      android:fillColor="#ffffff"/>
+  <path
+      android:pathData="M276.04,72.05C277.05,72.45 277.36,73.85 277.77,74.3C278.18,74.75 278.78,74.91 279.1,74.91C280.84,74.91 282.25,76.32 282.25,78.05V83.85C282.25,86.18 280.36,88.07 278.03,88.07H267.97C265.64,88.07 263.75,86.18 263.75,83.85V78.05C263.75,76.32 265.16,74.91 266.9,74.91C267.22,74.91 267.81,74.75 268.23,74.3C268.64,73.85 268.95,72.45 269.96,72.05C270.97,71.65 275.03,71.65 276.04,72.05Z"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.2"
+      android:fillColor="#00000000"
+      android:fillType="evenOdd"
+      android:strokeColor="#ADA4A5"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M278.49,77.5H278.5"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.2"
+      android:fillColor="#00000000"
+      android:strokeColor="#ADA4A5"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M276.18,81.13C276.18,79.37 274.76,77.95 273,77.95C271.24,77.95 269.82,79.37 269.82,81.13C269.82,82.88 271.24,84.31 273,84.31C274.76,84.31 276.18,82.88 276.18,81.13Z"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.2"
+      android:fillColor="#00000000"
+      android:fillType="evenOdd"
+      android:strokeColor="#ADA4A5"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M190,60m-30,0a30,30 0,1 1,60 0a30,30 0,1 1,-60 0">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startX="220"
+          android:startY="90"
+          android:endX="140.03"
+          android:endY="83.81"
+          android:type="linear">
+        <item android:offset="0" android:color="#FF92A3FD"/>
+        <item android:offset="1" android:color="#FF9DCEFF"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path
+      android:pathData="M189.8,59.81m-7.49,0a7.49,7.49 0,1 1,14.98 0a7.49,7.49 0,1 1,-14.98 0"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#ffffff"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M195.01,65.4L197.95,68.33"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.5"
+      android:fillColor="#00000000"
+      android:strokeColor="#ffffff"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M41.16,88.77V85.7C41.16,84.92 41.79,84.29 42.58,84.29H45.47C46.26,84.29 46.9,84.92 46.9,85.7V85.7V88.78C46.9,89.44 47.43,89.98 48.1,90H50.03C51.95,90 53.5,88.46 53.5,86.56V86.56V77.84C53.49,77.09 53.14,76.39 52.54,75.93L45.96,70.69C44.8,69.77 43.17,69.77 42.01,70.69L35.46,75.94C34.86,76.4 34.51,77.1 34.5,77.85V86.56C34.5,88.46 36.05,90 37.97,90H39.9C40.58,90 41.14,89.45 41.14,88.77V88.77"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.2"
+      android:fillColor="#00000000"
+      android:strokeColor="#ADA4A5"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M107,97m-2,0a2,2 0,1 1,4 0a2,2 0,1 1,-4 0">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startX="109"
+          android:startY="99"
+          android:endX="103.67"
+          android:endY="98.59"
+          android:type="linear">
+        <item android:offset="0" android:color="#FFC58BF2"/>
+        <item android:offset="1" android:color="#FFEEA4CE"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path
+      android:pathData="M112.18,72.41C112.18,71.08 113.26,70 114.59,70C115.92,70 117,71.08 117,72.41C117,73.74 115.92,74.82 114.59,74.82C113.26,74.82 112.18,73.74 112.18,72.41ZM108.33,82.76L111.22,79.03L111.18,79.05C111.34,78.83 111.37,78.55 111.26,78.3C111.15,78.05 110.91,77.88 110.65,77.86C110.38,77.83 110.11,77.95 109.95,78.17L107.53,81.3L104.76,79.12C104.59,78.99 104.39,78.94 104.19,78.96C103.99,78.99 103.81,79.1 103.69,79.26L100.73,83.11L100.67,83.2C100.5,83.52 100.58,83.93 100.88,84.15C101.02,84.24 101.17,84.3 101.34,84.3C101.57,84.31 101.79,84.19 101.93,84L104.44,80.77L107.29,82.91L107.38,82.97C107.7,83.14 108.1,83.06 108.33,82.76ZM110.45,71.78C110.41,72.03 110.39,72.28 110.39,72.53C110.39,74.78 112.21,76.6 114.45,76.6C114.7,76.6 114.94,76.57 115.19,76.53V84.6C115.19,87.99 113.19,90 109.79,90H102.4C99,90 97,87.99 97,84.6V77.2C97,73.8 99,71.78 102.4,71.78H110.45Z"
+      android:fillType="evenOdd">
+    <aapt:attr name="android:fillColor">
+      <gradient 
+          android:startX="117"
+          android:startY="90"
+          android:endX="90.34"
+          android:endY="87.94"
+          android:type="linear">
+        <item android:offset="0" android:color="#FFC58BF2"/>
+        <item android:offset="1" android:color="#FFEEA4CE"/>
+      </gradient>
+    </aapt:attr>
+  </path>
+  <path
+      android:pathData="M334.98,83.35C331.12,83.35 327.81,83.93 327.81,86.27C327.81,88.61 331.1,89.22 334.98,89.22C338.85,89.22 342.15,88.63 342.15,86.29C342.15,83.95 338.87,83.35 334.98,83.35Z"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.2"
+      android:fillColor="#00000000"
+      android:fillType="evenOdd"
+      android:strokeColor="#ADA4A5"
+      android:strokeLineCap="round"/>
+  <path
+      android:pathData="M334.98,80.01C337.52,80.01 339.58,77.95 339.58,75.41C339.58,72.87 337.52,70.81 334.98,70.81C332.45,70.81 330.39,72.87 330.39,75.41C330.38,77.94 332.42,80 334.95,80.01H334.98Z"
+      android:strokeLineJoin="round"
+      android:strokeWidth="1.2"
+      android:fillColor="#00000000"
+      android:fillType="evenOdd"
+      android:strokeColor="#ADA4A5"
+      android:strokeLineCap="round"/>
+</vector>
