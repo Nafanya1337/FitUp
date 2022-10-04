@@ -211,12 +211,14 @@
             android:id="@+id/imageViewFit"
             android:layout_width="0dp"
             android:layout_height="210dp"
+            android:layout_marginTop="560dp"
             android:cropToPadding="true"
             android:scaleType="fitXY"
             android:src="@drawable/home_bannerfoodbg"
-            app:layout_constraintWidth_percent="1.03"
-            tools:layout_editor_absoluteX="-6dp"
-            tools:layout_editor_absoluteY="557dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="1.03" />
 
         <TextView
             android:id="@+id/textView7"
