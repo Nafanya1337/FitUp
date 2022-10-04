@@ -1,13 +1,18 @@
 package com.example.fitup.fragments;
 
+import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
+import com.airbnb.lottie.LottieAnimationView;
 import com.example.fitup.R;
 
 /**
@@ -16,6 +21,9 @@ import com.example.fitup.R;
  * create an instance of this fragment.
  */
 public class ProfileFragment extends Fragment {
+
+    private LottieAnimationView switcher;
+    Boolean darkThemeOn = false;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -55,6 +63,29 @@ public class ProfileFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        switcher = (LottieAnimationView) getView().findViewById(R.id.switcher);
+        if(!darkThemeOn) switcher.setMinProgress(0.5f);
+        switcher.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(darkThemeOn) {
+                    switcher.setMinAndMaxProgress(0.0f,0.4964f);
+                    switcher.playAnimation();
+                    darkThemeOn = false;
+                }
+                else{
+                    switcher.setMinAndMaxProgress(0.4965f,1.0f);
+                    switcher.playAnimation();
+                    darkThemeOn = true;
+                }
+            }
+        });
     }
 
     @Override
@@ -64,3 +95,5 @@ public class ProfileFragment extends Fragment {
         return inflater.inflate(R.layout.fragment_profile, container, false);
     }
 }
+
+

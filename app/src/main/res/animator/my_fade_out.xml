@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <objectAnimator xmlns:android="http://schemas.android.com/apk/res/android"
-    android:interpolator="@android:interpolator/accelerate_quad"
+    android:ordering="sequentially"
     android:valueFrom="1"
     android:valueTo="0"
     android:propertyName="alpha"
-    android:duration="@android:integer/config_shortAnimTime"
-    />
+    android:duration="@integer/material_motion_duration_medium_1">
+</objectAnimator>

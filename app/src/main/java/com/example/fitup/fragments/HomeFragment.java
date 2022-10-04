@@ -81,7 +81,7 @@ public class HomeFragment extends Fragment {
                 Fragment fragment = new FoodFragment();
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out);
+                fragmentTransaction.setCustomAnimations(R.animator.my_fade_in, R.animator.my_fade_out);
                 fragmentTransaction.replace(R.id.fl_wrapper, fragment);
                 fragmentTransaction.commit();
             }
@@ -91,9 +91,11 @@ public class HomeFragment extends Fragment {
         fit_more.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                view.startAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.animation));
                 Fragment fragment = new FitFragment();
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.setCustomAnimations(R.animator.my_fade_in, R.animator.my_fade_out);
                 fragmentTransaction.replace(R.id.fl_wrapper, fragment);
                 fragmentTransaction.commit();
             }
@@ -103,9 +105,11 @@ public class HomeFragment extends Fragment {
         goal_more.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                view.startAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.animation));
                 Fragment fragment = new FitFragment();
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.setCustomAnimations(R.animator.my_fade_in, R.animator.my_fade_out);
                 fragmentTransaction.replace(R.id.fl_wrapper, fragment);
                 fragmentTransaction.commit();
             }
@@ -115,9 +119,11 @@ public class HomeFragment extends Fragment {
         mass_more.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                view.startAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.animation));
                 Fragment fragment = new FoodFragment();
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.setCustomAnimations(R.animator.my_fade_in, R.animator.my_fade_out);
                 fragmentTransaction.replace(R.id.fl_wrapper, fragment);
                 fragmentTransaction.commit();
             }

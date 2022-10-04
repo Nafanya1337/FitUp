@@ -4,5 +4,5 @@
     android:valueFrom="0"
     android:valueTo="1"
     android:propertyName="alpha"
-    android:duration="@integer/material_motion_duration_short_1"
-/>
+    android:duration="@integer/material_motion_duration_short_1">
+</objectAnimator>
