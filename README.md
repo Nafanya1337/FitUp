@@ -4,7 +4,7 @@
 
 <p align="center">
    <img src="https://img.shields.io/badge/Android-%3E%3D5.0-blueviolet" alt="Min Android ver.">
-   <img src="https://img.shields.io/badge/Version-v0.1(Beta)-lightgrey" alt="App ver.">
+   <img src="https://img.shields.io/badge/Version-v0.0.1(Pre--Alpha)-lightgrey" alt="App ver.">
    <img src="https://img.shields.io/badge/License-MIT-blue" alt="License">
 </p>
 
