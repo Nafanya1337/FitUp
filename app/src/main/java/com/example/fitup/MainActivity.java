@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.fragment_home);
         this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT); // Фиксируем портретное положение
 
+        // ae
+
         prefs = getSharedPreferences("com.mycompany.appname", MODE_PRIVATE);
         if (prefs.getBoolean("firstrun", true)) {
             Intent intent = new Intent(MainActivity.this, welcome.class);
