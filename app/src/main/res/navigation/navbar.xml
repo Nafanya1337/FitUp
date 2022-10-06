@@ -24,5 +24,15 @@
         android:id="@+id/fitFragment"
         android:name="com.example.fitup.fragments.FitFragment"
         android:label="fragment_fit"
-        tools:layout="@layout/fragment_fit" />
+        tools:layout="@layout/fragment_fit" >
+        <action
+            android:id="@+id/action_fitFragment_to_warmupF"
+            app:destination="@id/warmupF" />
+    </fragment>
+    <fragment
+        android:id="@+id/warmupF"
+        android:name="com.example.fitup.fragments.WarmupF"
+        android:label="warmup_start"
+        tools:layout="@layout/fragment_warmupf"
+        />
 </navigation>

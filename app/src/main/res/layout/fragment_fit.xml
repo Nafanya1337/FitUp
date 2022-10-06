@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:onClick="onClick"
     tools:context=".fragments.FitFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -40,13 +39,12 @@
             app:layout_constraintVertical_bias="0.286"
             app:layout_constraintWidth_percent="0.8" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/warmup_start"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginEnd="8dp"
             android:clickable="true"
-            android:onClick="onClick"
             android:src="@drawable/workout_btn"
             android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="@+id/imageView17"
@@ -78,13 +76,12 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.029" />
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button"
-            tools:layout_editor_absoluteX="264dp"
-            tools:layout_editor_absoluteY="366dp" />
+        <FrameLayout
+            android:id="@+id/fr_place"
+            android:layout_width="418dp"
+            android:layout_height="128dp"
+            tools:layout_editor_absoluteX="-4dp"
+            tools:layout_editor_absoluteY="692dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
