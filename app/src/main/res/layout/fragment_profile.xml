@@ -16,8 +16,9 @@
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/switcher"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="265dp"
+            android:layout_height="118dp"
+            android:scaleType="center"
             app:lottie_rawRes="@raw/day_and_night_switch_button" />
 
     </LinearLayout>
