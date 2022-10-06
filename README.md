@@ -12,6 +12,8 @@
 
 Приложение для физических нагрузок. Было разработано для проекта по Джаве
 
+[__Stable version 0.0.1 (Pre-Alpha)__](https://github.com/Nafanya1337/FitUp/tree/FitUp_stable)
+
 ## Developers
 
 - [Ivan](https://github.com/A1rLie)
