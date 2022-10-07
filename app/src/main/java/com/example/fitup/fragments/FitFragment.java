@@ -39,7 +39,7 @@ public class FitFragment extends Fragment {
                 Fragment fragment = new WarmupF();
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
 
-                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
 
                 fragmentTransaction.setCustomAnimations(R.animator.my_fade_in, R.animator.my_fade_out);
                 fragmentTransaction.replace(R.id.fr_place, fragment);
