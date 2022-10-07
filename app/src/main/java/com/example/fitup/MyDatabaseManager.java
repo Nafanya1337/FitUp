@@ -27,11 +27,19 @@ public class MyDatabaseManager {
         ContentValues cv = new ContentValues();
 
         cv.put(DatabaseHelper.COLUMN_NAME, name);
-        cv.put(DatabaseHelper.COLUMN_SURNAME, surname);
         cv.put(DatabaseHelper.COLUMN_WEIGHT, weight);
         cv.put(DatabaseHelper.COLUMN_HEIGHT, height);
         cv.put(DatabaseHelper.COLUMN_AGE, age);
         db.insert(DatabaseHelper.TABLE_NAME, null, cv);
+    }
+
+    public void update(String name, int h, int w, int a){
+        ContentValues cv = new ContentValues();
+        cv.put(DatabaseHelper.COLUMN_NAME, name);
+        cv.put(DatabaseHelper.COLUMN_HEIGHT, h);
+        cv.put(DatabaseHelper.COLUMN_WEIGHT, w);
+        cv.put(DatabaseHelper.COLUMN_AGE, a);
+        db.update(DatabaseHelper.TABLE_NAME, cv, "_id = ?",new String[]{Integer.toString(1)});
     }
 
     public String getName(){
@@ -42,13 +50,6 @@ public class MyDatabaseManager {
         return name;
     }
 
-    public String getSurname(){
-        Cursor cursor = db.query(DatabaseHelper.TABLE_NAME,null,null,null,null,null,null);
-        cursor.moveToNext();
-        String surname = cursor.getString(cursor.getColumnIndex(DatabaseHelper.COLUMN_SURNAME));
-        cursor.close();
-        return surname;
-    }
 
     public int getWeight(){
         Cursor cursor = db.query(DatabaseHelper.TABLE_NAME,null,null,null,null,null,null);

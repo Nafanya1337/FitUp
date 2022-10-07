@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.EditProfile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:background="@color/light_grey">
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="0dp"
+            android:layout_height="180dp"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:src="@drawable/profile_card"
+            android:translationY="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/edit"
+            android:layout_width="53dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="36dp"
+            android:clickable="true"
+            app:lottie_autoPlay="true"
+            android:layerType="hardware"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.1"
+            app:lottie_rawRes="@raw/edit_pencil" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="230dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="57dp"
+            android:ems="10"
+            android:fontFamily="@font/poppins_regular"
+            android:hint="Имя Фамилия"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textColor="@color/black"
+            android:textColorHint="#7B7B7B"
+            android:textColorLink="@color/black"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/edit"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="52dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="112dp"
+            android:ems="10"
+            android:hint="1"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="92dp"
+            android:layout_marginTop="112dp"
+            android:ems="10"
+            android:hint="1"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/height"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/age"
+            android:layout_width="45dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="112dp"
+            android:ems="10"
+            android:hint="1"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/weight"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:scaleX="1.3"
+        android:scaleY="1.3"
+        android:src="@drawable/profile_card"
+        android:translationY="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</FrameLayout>

@@ -8,6 +8,8 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
@@ -48,7 +50,9 @@ public class ProfileFragment extends Fragment {
     private LottieAnimationView switcher;
     Boolean darkThemeOn = false;
     TextView bio, height, weight, age;
+    String bio_,height_,weight_,age_;
     private MyDatabaseManager myDatabaseManager;
+    LottieAnimationView edit;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -84,38 +88,50 @@ public class ProfileFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
         myDatabaseManager = new MyDatabaseManager(getActivity());
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
         bio = (TextView) getView().findViewById(R.id.Bio);
         height = (TextView) getView().findViewById(R.id.height);
         weight = (TextView) getView().findViewById(R.id.weight);
         age = (TextView) getView().findViewById(R.id.age);
 
         myDatabaseManager.open();
+
         Person person = new Person();
         myDatabaseManager.insert(person.getName(),person.getSurname(),person.getWeight(),person.getHeight(),person.getAge());
-        bio.setText(myDatabaseManager.getName() + " " + myDatabaseManager.getSurname());
+        bio.setText(myDatabaseManager.getName());
 
         height.setText(Integer.toString(myDatabaseManager.getHeight()) + " см.");
         weight.setText(Integer.toString(myDatabaseManager.getWeight()) + " кг.");
         age.setText(Integer.toString(myDatabaseManager.getAge()) + " лет");
 
         myDatabaseManager.close();
+
+        edit = (LottieAnimationView) getView().findViewById(R.id.edit);
+        edit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EditProfile fragment = new EditProfile();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fl_wrapper, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
+            }
+        });
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile, container, false);
+        View v = inflater.inflate(R.layout.fragment_profile, container, false);
+        return v;
     }
 
     private boolean fileExists(Context _context, String _filename) {

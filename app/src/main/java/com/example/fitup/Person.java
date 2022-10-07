@@ -9,8 +9,7 @@ public class Person {
     private int age;
 
     {
-        name = "Имя";
-        surname = "Фамилия";
+        name = "Имя Фамилия";
         weight = 70;
         height = 175;
         age = 20;
