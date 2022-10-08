@@ -128,21 +128,23 @@ public class ProfileFragment extends Fragment {
         });
 
         switcher_button = (LottieAnimationView) getView().findViewById(R.id.switcher);
-        switcher_button.setSpeed(2.2f);
+        switcher_button.setSpeed(3.5f);
         switcher_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (dark_theme_on){
-                    switcher_button.setMinAndMaxProgress(0.5f,1.0f);
-                    switcher_button.playAnimation();
-                    dark_theme_on = false;
+                if(!switcher_button.isAnimating()) {
+                    if (dark_theme_on) {
+                        switcher_button.setMinAndMaxProgress(0.5f, 1.0f);
+                        switcher_button.playAnimation();
+                        switcher_button.setEnabled(true);
+                        dark_theme_on = false;
+                    } else {
+                        switcher_button.setMinAndMaxProgress(0.0f, 0.5f);
+                        switcher_button.playAnimation();
+                        switcher_button.setEnabled(true);
+                        dark_theme_on = true;
+                    }
                 }
-                else{
-                    switcher_button.setMinAndMaxProgress(0.0f,0.5f);
-                    switcher_button.playAnimation();
-                    dark_theme_on = true;
-                }
-
             }
         });
 
