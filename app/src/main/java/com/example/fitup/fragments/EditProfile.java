@@ -89,6 +89,11 @@ public class EditProfile extends Fragment {
             public void onClick(View view) {
 
                 String bio = name.getText().toString();
+                if (name.getText().toString().length() > 0)
+                    bio = name.getText().toString();
+                else
+                    bio = myDatabaseManager.getName();
+
                 int h;
                 if (height.getText().toString().length() > 0)
                     h = Integer.parseInt(height.getText().toString());
@@ -113,7 +118,6 @@ public class EditProfile extends Fragment {
                 FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fl_wrapper, fragment);
-                fragmentTransaction.addToBackStack(null);
                 fragmentTransaction.commit();
             }
         });
