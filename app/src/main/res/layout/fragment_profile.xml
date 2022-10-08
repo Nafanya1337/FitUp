@@ -129,13 +129,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="476dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="180dp"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="200dp"
+            android:layout_height="match_parent"
             android:gravity="center">
 
             <ImageView
@@ -168,7 +168,29 @@
                 android:scaleX="1.3"
                 android:scaleY="1.3"
                 app:lottie_rawRes="@raw/theme_switcher" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="145dp"
+                android:layout_weight="1"
+                android:scaleX="1.26"
+                android:scaleY="1.26"
+                android:src="@drawable/about_us_bg">
+
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/about_us_button"
+                android:layout_width="37dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="320dp"
+                android:layout_marginTop="230dp"
+                android:clickable="true"
+                android:src="@drawable/icon_arrow" />
+
         </RelativeLayout>
+
     </LinearLayout>
 
 </FrameLayout>

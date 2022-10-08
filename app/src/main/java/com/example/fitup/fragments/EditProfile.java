@@ -11,6 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageView;
+
 import com.airbnb.lottie.LottieAnimationView;
 import com.example.fitup.MyDatabaseManager;
 import com.example.fitup.R;
@@ -126,5 +128,6 @@ public class EditProfile extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+
     }
 }

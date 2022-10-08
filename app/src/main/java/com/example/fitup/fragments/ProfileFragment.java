@@ -16,6 +16,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -53,6 +54,7 @@ public class ProfileFragment extends Fragment {
     private MyDatabaseManager myDatabaseManager;
     private LottieAnimationView edit, switcher_button;
     private Boolean dark_theme_on = false;
+    private ImageView aboutus;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -99,6 +101,7 @@ public class ProfileFragment extends Fragment {
         height = (TextView) getView().findViewById(R.id.height);
         weight = (TextView) getView().findViewById(R.id.weight);
         age = (TextView) getView().findViewById(R.id.age);
+        aboutus = (ImageView) getView().findViewById(R.id.about_us_button);
 
         myDatabaseManager.open();
 
@@ -140,6 +143,18 @@ public class ProfileFragment extends Fragment {
                     dark_theme_on = true;
                 }
 
+            }
+        });
+
+        aboutus.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                AbousUs fragment = new AbousUs();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.fl_wrapper, fragment);
+                fragmentTransaction.addToBackStack(null);
+                fragmentTransaction.commit();
             }
         });
     }

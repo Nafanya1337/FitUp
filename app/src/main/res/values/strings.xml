@@ -41,6 +41,16 @@
     <integer name="workout_razminka_diff">30</integer>
     <string name="title_activity_settings">SettingsActivity</string>
 
+
+    <string name="about_us_info">Приложение было разработано в рамках изучения курса по Java.
+
+
+
+        Разработкой проекта занимались:
+        1. Демин Иван
+        2. Хоров Николай
+        3. Шмаков Фёдор</string>
+
     <!-- Preference Titles -->
     <string name="messages_header">Messages</string>
     <string name="sync_header">Sync</string>
