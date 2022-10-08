@@ -83,6 +83,11 @@ public class EditProfile extends Fragment {
 
         myDatabaseManager.open();
 
+        name.setHint(myDatabaseManager.getName());
+        height.setHint(Integer.toString(myDatabaseManager.getHeight()));
+        weight.setHint(Integer.toString(myDatabaseManager.getWeight()));
+        age.setHint(Integer.toString(myDatabaseManager.getAge()));
+
         edit = (LottieAnimationView) getView().findViewById(R.id.edit);
         edit.setOnClickListener(new View.OnClickListener() {
             @Override
