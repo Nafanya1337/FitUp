@@ -48,11 +48,11 @@ import java.util.stream.Stream;
 public class ProfileFragment extends Fragment {
 
     private LottieAnimationView switcher;
-    Boolean darkThemeOn = false;
-    TextView bio, height, weight, age;
-    String bio_,height_,weight_,age_;
+    private TextView bio, height, weight, age;
+    private String bio_,height_,weight_,age_;
     private MyDatabaseManager myDatabaseManager;
-    LottieAnimationView edit;
+    private LottieAnimationView edit, switcher_button;
+    private Boolean dark_theme_on = false;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -121,6 +121,25 @@ public class ProfileFragment extends Fragment {
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.fl_wrapper, fragment);
                 fragmentTransaction.commit();
+            }
+        });
+
+        switcher_button = (LottieAnimationView) getView().findViewById(R.id.switcher);
+        switcher_button.setSpeed(2.2f);
+        switcher_button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (dark_theme_on){
+                    switcher_button.setMinAndMaxProgress(0.5f,1.0f);
+                    switcher_button.playAnimation();
+                    dark_theme_on = false;
+                }
+                else{
+                    switcher_button.setMinAndMaxProgress(0.0f,0.5f);
+                    switcher_button.playAnimation();
+                    dark_theme_on = true;
+                }
+
             }
         });
     }
