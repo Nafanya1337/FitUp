@@ -14,9 +14,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.SearchView;
 import android.widget.TextView;
 
+import com.example.fitup.AndroidFileFunctions;
 import com.example.fitup.R;
 
 /**
@@ -27,6 +29,8 @@ import com.example.fitup.R;
 public class FoodFragment extends Fragment {
 
     ImageView salades, desserts, soups, fruicts, second;
+    TextView b0;
+    LinearLayout breakfast;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -74,6 +78,8 @@ public class FoodFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        breakfast = (LinearLayout) getView().findViewById(R.id.breakfast);
+        b0 = (TextView) getView().findViewById(R.id.breakfast_null);
         search = (SearchView) getView().findViewById(R.id.search_bar);
         salades = getView().findViewById(R.id.salades);
         salades.setOnClickListener(new View.OnClickListener() {
