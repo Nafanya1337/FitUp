@@ -6,99 +6,340 @@
     android:layout_height="match_parent"
     tools:context=".fragments.HomeFragment">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@color/light_grey"
-        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:background="@color/light_grey">
 
         <ImageView
             android:id="@+id/food_searchBar"
-            android:layout_width="429dp"
-            android:layout_height="112dp"
-            android:src="@drawable/search_bar_variant_1" />
-
-        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent"
+            android:scaleX="1.1"
+            android:layout_marginStart="25dp"
+            android:scaleY="1.1"
+            android:src="@drawable/search_bar" />
+    </RelativeLayout>
 
-            <ImageView
-                android:id="@+id/food_backgroundCalloriesGraphic"
-                android:layout_width="396dp"
-                android:layout_height="187dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="19dp"
-                android:src="@drawable/home_bannerfoodbg"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintLeft_toLeftOf="@id/food_calloriesGraphic"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:background="@color/light_grey">
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_marginTop="56dp"
+            android:scrollbarSize="0dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="0dp">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@color/light_grey"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                tools:layout_editor_absoluteX="0dp">
 
-            <ImageView
-                android:id="@+id/food_calloriesGraphic"
-                android:layout_width="391dp"
-                android:layout_height="181dp"
-                android:layout_marginTop="25dp"
-                android:layout_marginEnd="-1dp"
-                android:src="@drawable/graphics_meal"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleX="1.25"
+                    android:scaleY="1.25"
+                    android:src="@drawable/salad_card" />
 
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Ваши калории за неделю"
-                android:textSize="17dp"
-                android:textColor="@color/black"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageView
+                    android:id="@+id/imageView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleX="1.25"
+                    android:scaleY="1.25"
+                    android:src="@drawable/cake_card" />
+
+                <ImageView
+                    android:id="@+id/imageView27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleX="1.25"
+                    android:scaleY="1.25"
+                    android:src="@drawable/soup_card" />
+
+                <ImageView
+                    android:id="@+id/imageView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:scaleX="1.25"
+                    android:scaleY="1.25"
+                    android:src="@drawable/fruictes_card" />
+
+                <ImageView
+                    android:id="@+id/imageView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_weight="1"
+                    android:scaleX="1.25"
+                    android:scaleY="1.25"
+                    android:src="@drawable/second_card" />
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Категории"
+            android:textColor="@color/black"
+            android:textSize="23dp"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.466" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="План на сегодня"
+            android:textColor="@color/black"
+            android:textSize="23dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
 
         <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
+            android:layout_height="match_parent"
+            android:layout_marginTop="240dp">
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical" >
-
+                android:layout_height="wrap_content">
                 <ImageView
-                    android:id="@+id/imageView42"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/eat_template" />
+                    android:id="@+id/imageView32"
+                    android:layout_width="wrap_content"
+                    android:scaleY="1.4"
+                    android:scaleX="1.4"
+                    android:layout_marginStart="72dp"
+                    android:layout_height="470dp"
+                    android:layout_marginTop="17dp"
+                    android:src="@drawable/food_steps"
+                    />
 
-                <ImageView
-                    android:id="@+id/imageView43"
+                <HorizontalScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/eat_template" />
+                    android:layout_height="120dp"
+                    android:layout_marginStart="-100dp"
+                    android:layout_marginTop="40dp"
+                    android:scrollbarSize="0dp">
 
-                <ImageView
-                    android:id="@+id/imageView44"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/eat_template" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
 
-                <ImageView
-                    android:id="@+id/imageView45"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/eat_template" />
+                        <ImageView
+                            android:id="@+id/breakfast1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5"
+                            android:src="@drawable/salad_card" />
 
-                <ImageView
-                    android:id="@+id/imageView46"
+                        <ImageView
+                            android:id="@+id/brakfast2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="20dp"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5"
+                            android:src="@drawable/cake_card" />
+                        <ImageView
+                            android:id="@+id/breakfast6"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5"
+                            android:src="@drawable/salad_card" />
+
+                        <ImageView
+                            android:id="@+id/brakfast3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="20dp"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5"
+                            android:src="@drawable/cake_card" />
+                        <ImageView
+                            android:id="@+id/breakfast4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5"
+                            android:src="@drawable/salad_card" />
+
+                        <ImageView
+                            android:id="@+id/brakfast5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginEnd="15dp"
+                            android:layout_marginBottom="20dp"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5"
+                            android:src="@drawable/cake_card" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <HorizontalScrollView
+                    android:duplicateParentState="true"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/eat_template" />
+                    android:layout_height="120dp"
+                    android:layout_marginStart="-243dp"
+                    android:layout_marginTop="190dp"
+                    android:scrollbarSize="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/dinner1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5"
+                            android:src="@drawable/salad_card" />
+
+                        <ImageView
+                            android:id="@+id/dinner2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="20dp"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginEnd="15dp"
+                            android:src="@drawable/cake_card" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="340dp"
+                    android:layout_marginStart="-243dp"
+                    android:scrollbarSize="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/lunch1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5"
+                            android:src="@drawable/salad_card" />
+
+                        <ImageView
+                            android:id="@+id/lunch2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="20dp"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginEnd="15dp"
+                            android:src="@drawable/cake_card" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="500dp"
+                    android:layout_marginStart="-243dp"
+                    android:scrollbarSize="0dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/seclunch1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5"
+                            android:src="@drawable/salad_card" />
+
+                        <ImageView
+                            android:id="@+id/seclunch2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginTop="20dp"
+                            android:scaleX="1.5"
+                            android:scaleY="1.5"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginEnd="15dp"
+                            android:src="@drawable/cake_card" />
+
+                    </LinearLayout>
+                </HorizontalScrollView>
             </LinearLayout>
         </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </LinearLayout>
 </FrameLayout>
