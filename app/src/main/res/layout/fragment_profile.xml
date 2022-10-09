@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".fragments.ProfileFragment"
     android:layout_gravity="center"
-    android:background="@color/light_grey">
+    android:background="@color/bg_color">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -70,40 +70,44 @@
 
         <TextView
             android:id="@+id/height"
-            android:layout_width="8dp"
+            android:layout_width="80dp"
             android:layout_height="21dp"
-            android:layout_marginStart="61dp"
+            android:layout_marginStart="25dp"
             android:layout_marginTop="120dp"
             android:gravity="center"
             android:text="1"
             android:textColor="@color/black"
             android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/imageView8"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/weight"
-            android:layout_width="8dp"
+            android:layout_width="80dp"
             android:layout_height="20dp"
-            android:layout_marginStart="200dp"
             android:layout_marginTop="120dp"
             android:gravity="center"
             android:text="1"
             android:textColor="@color/black"
             android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="@+id/imageView8"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/age"
-            android:layout_width="8dp"
+            android:layout_width="63dp"
             android:layout_height="20dp"
-            android:layout_marginStart="340dp"
+            android:layout_marginStart="304dp"
             android:layout_marginTop="120dp"
             android:gravity="center"
             android:text="1"
             android:textColor="@color/black"
             android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.409"
             app:layout_constraintStart_toStartOf="@+id/imageView8"
             app:layout_constraintTop_toTopOf="parent" />
 

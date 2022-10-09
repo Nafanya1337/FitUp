@@ -11,7 +11,7 @@
         android:layout_height="180dp"
         android:gravity="center"
         android:orientation="vertical"
-        android:background="@color/light_grey">
+        android:background="@color/bg_color">
 
         <ImageView
             android:id="@+id/imageView8"

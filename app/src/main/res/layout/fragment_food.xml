@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="100dp"
         android:gravity="center"
-        android:background="@color/light_grey">
+        android:background="@color/bg_color">
 
         <ImageView
             android:id="@+id/food_searchBar"
@@ -20,13 +20,31 @@
             android:layout_marginStart="25dp"
             android:scaleY="1.1"
             android:src="@drawable/search_bar" />
+
+        <android.widget.SearchView
+            android:layout_width="274dp"
+            android:layout_height="37dp"
+            android:id="@+id/search_bar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="87dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="108dp"
+            android:layout_marginBottom="30dp"
+            android:iconifiedByDefault="false"
+            android:outlineSpotShadowColor="@color/black"
+            android:searchIcon="@null"
+            android:theme="@style/Theme.FitUp"/>
+
     </RelativeLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="100dp"
-        android:background="@color/light_grey">
+        android:background="@color/bg_color">
 
 
         <HorizontalScrollView
@@ -42,23 +60,24 @@
                 android:id="@+id/linearLayout"
                 android:layout_width="match_parent"
                 android:layout_height="140dp"
-                android:background="@color/light_grey"
+                android:background="@color/bg_color"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:layout_editor_absoluteX="0dp">
 
                 <ImageView
-                    android:id="@+id/imageView23"
+                    android:id="@+id/salades"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="35dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginBottom="20dp"
+                    android:clickable="true"
                     android:scaleX="1.25"
                     android:scaleY="1.25"
                     android:src="@drawable/salad_card" />
 
                 <ImageView
-                    android:id="@+id/imageView24"
+                    android:id="@+id/desserts"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
@@ -69,7 +88,7 @@
                     android:src="@drawable/cake_card" />
 
                 <ImageView
-                    android:id="@+id/imageView27"
+                    android:id="@+id/soups"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
@@ -80,7 +99,7 @@
                     android:src="@drawable/soup_card" />
 
                 <ImageView
-                    android:id="@+id/imageView28"
+                    android:id="@+id/fruicts"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
@@ -91,7 +110,7 @@
                     android:src="@drawable/fruictes_card" />
 
                 <ImageView
-                    android:id="@+id/imageView29"
+                    android:id="@+id/second"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="30dp"
