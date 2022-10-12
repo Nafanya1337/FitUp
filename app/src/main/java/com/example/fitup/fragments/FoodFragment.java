@@ -1,6 +1,5 @@
 package com.example.fitup.fragments;
 
-import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -9,7 +8,6 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.provider.ContactsContract;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +16,7 @@ import android.widget.LinearLayout;
 import android.widget.SearchView;
 import android.widget.TextView;
 
-import com.example.fitup.AndroidFileFunctions;
+import com.example.fitup.FoodDatabaseManager;
 import com.example.fitup.R;
 
 /**
@@ -29,8 +27,9 @@ import com.example.fitup.R;
 public class FoodFragment extends Fragment {
 
     ImageView salades, desserts, soups, fruicts, second;
-    TextView b0;
-    LinearLayout breakfast;
+    TextView b0, d0, l10, l20;
+    LinearLayout breakfast, dinner, lunch1, lunch2;
+    FoodDatabaseManager db;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -72,14 +71,44 @@ public class FoodFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        db = new FoodDatabaseManager(getActivity());
     }
-
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        FindAll(); // чисто находим все элементики которые добавили
+        MakeBreakfast(); // создаем расписание на зватрак
+        MakeDinner();
+        MakeLunchFirst();
+        //MakeLunchSecond();
+    }
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_food, container, false);
+    }
+
+
+
+
+
+    public void FindAll(){
+
         breakfast = (LinearLayout) getView().findViewById(R.id.breakfast);
         b0 = (TextView) getView().findViewById(R.id.breakfast_null);
+
+        dinner = (LinearLayout) getView().findViewById(R.id.dinner);
+        d0 = (TextView) getView().findViewById(R.id.dinner_null);
+
+        lunch1 = (LinearLayout) getView().findViewById(R.id.lunch1);
+        l10 = (TextView) getView().findViewById(R.id.l1_null);
+
+        lunch2 = (LinearLayout) getView().findViewById(R.id.lunch2);
+        l20 = (TextView) getView().findViewById(R.id.l2_null);
+
         search = (SearchView) getView().findViewById(R.id.search_bar);
         salades = getView().findViewById(R.id.salades);
         salades.setOnClickListener(new View.OnClickListener() {
@@ -139,13 +168,67 @@ public class FoodFragment extends Fragment {
             }
         });
 
-        //searchtext.setTextColor(Color.BLACK);
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_food, container, false);
+
+
+    public void MakeBreakfast(){
+        boolean flag = false;
+        for (int i=0; i<db.getCountlines();i++){
+            if(db.getFoodTime() != "0" && db.getFoodTime() == "breakfast"){
+                flag = true;
+            }
+        }
+
+        if (flag==false){
+            b0.setVisibility(View.VISIBLE);
+            breakfast.setVisibility(View.INVISIBLE);
+        }
     }
+
+
+    public void MakeDinner(){
+        boolean flag = false;
+        for (int i=0; i<db.getCountlines();i++){
+            if(db.getFoodTime() != "0" && db.getFoodTime() == "dinner"){
+                flag = true;
+            }
+        }
+
+        if (flag==false){
+            d0.setVisibility(View.VISIBLE);
+            dinner.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public void MakeLunchFirst(){
+        boolean flag = false;
+        for (int i=0; i<db.getCountlines();i++){
+            if(db.getFoodTime() != "0" && db.getFoodTime() == "lunch_first"){
+                flag = true;
+            }
+        }
+
+        if (flag==false){
+            l10.setVisibility(View.VISIBLE);
+            lunch1.setVisibility(View.INVISIBLE);
+        }
+    }
+
+    public void MakeLunchSecond(){
+        boolean flag = false;
+        for (int i=0; i<db.getCountlines();i++){
+            if(db.getFoodTime() != "0" && db.getFoodTime() == "lunch_second"){
+                flag = true;
+            }
+        }
+
+        if (flag==false){
+            l20.setVisibility(View.VISIBLE);
+            lunch2.setVisibility(View.INVISIBLE);
+        }
+    }
+
+
+
 }

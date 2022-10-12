@@ -21,22 +21,22 @@ public class FoodDatabaseManager {
         db = databaseHelper.getWritableDatabase();
     }
 
-    public void insert(String name, String surname, int u, int b, int zh){
+    public void insert(String name, String type, String time, int kk){
         ContentValues cv = new ContentValues();
         databaseHelper.countlines++;
         cv.put(FoodDatabase.COLUMN_FOOD, name);
-        cv.put(FoodDatabase.COLUMN_U, u);
-        cv.put(FoodDatabase.COLUMN_B, b);
-        cv.put(FoodDatabase.COLUMN_ZH, zh);
+        cv.put(FoodDatabase.COLUMN_TYPE, type);
+        cv.put(FoodDatabase.COLUMN_TIME, time);
+        cv.put(FoodDatabase.COLUMN_KK, kk);
         db.insert(FoodDatabase.TABLE_NAME, null, cv);
     }
 
-    public void update(String name, int u, int b, int zh){
+    public void update(String name, String type, String time, int kk){
         ContentValues cv = new ContentValues();
         cv.put(FoodDatabase.COLUMN_FOOD, name);
-        cv.put(FoodDatabase.COLUMN_U, u);
-        cv.put(FoodDatabase.COLUMN_B, b);
-        cv.put(FoodDatabase.COLUMN_ZH, zh);
+        cv.put(FoodDatabase.COLUMN_TYPE, type);
+        cv.put(FoodDatabase.COLUMN_TIME, time);
+        cv.put(FoodDatabase.COLUMN_KK, kk);
         db.update(FoodDatabase.TABLE_NAME, cv, "_id = ?",new String[]{Integer.toString(1)});
     }
 
@@ -55,29 +55,32 @@ public class FoodDatabaseManager {
         return name;
     }
 
-
-    public int getU(){
+    public String getFoodType(){
         Cursor cursor = db.query(FoodDatabase.TABLE_NAME,null,null,null,null,null,null);
         cursor.moveToNext();
-        int weight = cursor.getInt(cursor.getColumnIndex(FoodDatabase.COLUMN_U));
+        String name = cursor.getString(cursor.getColumnIndex(FoodDatabase.COLUMN_TYPE));
         cursor.close();
-        return weight;
+        return name;
     }
 
-    public int getB(){
+    public String getFoodTime(){
         Cursor cursor = db.query(FoodDatabase.TABLE_NAME,null,null,null,null,null,null);
         cursor.moveToNext();
-        int height = cursor.getInt(cursor.getColumnIndex(FoodDatabase.COLUMN_B));
+        String time = cursor.getString(cursor.getColumnIndex(FoodDatabase.COLUMN_TIME));
         cursor.close();
-        return height;
+        return time;
     }
 
-    public int getZH(){
+    public int getKK(String name){
         Cursor cursor = db.query(FoodDatabase.TABLE_NAME,null,null,null,null,null,null);
         cursor.moveToNext();
-        int age = cursor.getInt(cursor.getColumnIndex(FoodDatabase.COLUMN_ZH));
+        while (cursor.getString(cursor.getColumnIndex(FoodDatabase.TABLE_NAME)) != name) {
+            if(cursor.isLast()) return 0;
+            cursor.moveToNext();
+        }
+        int kk = cursor.getInt(cursor.getColumnIndex(FoodDatabase.COLUMN_KK));
         cursor.close();
-        return age;
+        return kk;
     }
 
     public void close(){

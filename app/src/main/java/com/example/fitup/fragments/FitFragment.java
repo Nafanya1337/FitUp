@@ -31,21 +31,6 @@ public class FitFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        warmup_start = (ImageView) getView().findViewById(R.id.warmup_start);
-        warmup_start.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                view.startAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.animation));
-                Fragment fragment = new WarmupF();
-                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-
-                FragmentTransaction fragmentTransaction =fragmentManager.beginTransaction();
-
-                fragmentTransaction.setCustomAnimations(R.animator.my_fade_in, R.animator.my_fade_out);
-                fragmentTransaction.replace(R.id.fr_place, fragment);
-                fragmentTransaction.commit();
-            }
-        });
     }
 
     @Override
