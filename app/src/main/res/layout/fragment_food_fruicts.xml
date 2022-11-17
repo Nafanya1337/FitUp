@@ -50,6 +50,7 @@
             android:layout_height="112dp"
             android:layout_marginStart="130dp"
             android:layout_marginTop="20dp"
+            android:clickable="true"
             android:scaleX="1.25"
             android:scaleY="1.25"
             android:src="@drawable/fruicts_bg"
@@ -80,6 +81,7 @@
             android:layout_height="114dp"
             android:layout_marginStart="130dp"
             android:layout_marginTop="20dp"
+            android:clickable="true"
             android:scaleX="1.25"
             android:scaleY="1.25"
             android:src="@drawable/fruicts_bg"
@@ -128,12 +130,24 @@
             android:layout_height="114dp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="20dp"
+            android:clickable="true"
             android:scaleX="1.25"
             android:scaleY="1.25"
             android:src="@drawable/fruicts_bg"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/add"
+            android:layout_width="157dp"
+            android:layout_height="163dp"
+            android:layout_marginBottom="4dp"
+            android:clickable="true"
+            android:src="@drawable/add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

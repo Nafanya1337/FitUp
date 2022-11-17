@@ -23,21 +23,22 @@
             android:src="@drawable/search_bar" />
 
         <android.widget.SearchView
-            android:layout_width="274dp"
-            android:layout_height="37dp"
             android:id="@+id/search_bar"
+            android:layout_width="254dp"
+            android:layout_height="32dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:layout_marginStart="87dp"
-            android:layout_marginTop="33dp"
-            android:layout_marginEnd="108dp"
-            android:layout_marginBottom="30dp"
+            android:layout_marginStart="63dp"
+            android:layout_marginTop="35dp"
+            android:layout_marginEnd="103dp"
+            android:layout_marginBottom="33dp"
+            android:gravity="left"
             android:iconifiedByDefault="false"
             android:outlineSpotShadowColor="@color/black"
             android:searchIcon="@null"
-            android:theme="@style/Theme.FitUp"/>
+            android:theme="@style/Theme.FitUp" />
 
     </RelativeLayout>
 

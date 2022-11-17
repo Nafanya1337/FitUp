@@ -23,7 +23,8 @@ import com.example.fitup.R;
  */
 public class FoodFruicts extends Fragment {
 
-    ImageView back;
+    ImageView back, add, salad1, salad2, salad3;
+    Boolean fl = false;
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -69,6 +70,37 @@ public class FoodFruicts extends Fragment {
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.setCustomAnimations(R.animator.my_fade_in, R.animator.my_fade_out);
                 fragmentTransaction.replace(R.id.fl_wrapper, fragment);
+                fragmentTransaction.commit();
+            }
+        });
+
+        add = (ImageView) getView().findViewById(R.id.add);
+        add.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                if (fl == true)
+                {
+                    fragmentTransaction.remove(fragmentManager.findFragmentByTag("NEW_FOOD"));
+                }
+                NewFood fragment = new NewFood();
+                fragmentTransaction.setCustomAnimations(R.animator.my_fade_in, R.animator.my_fade_out);
+                fragmentTransaction.add(R.id.fl_wrapper, fragment, "NEW_FOOD");
+                fragmentTransaction.commit();
+                fl = true;
+            }
+        });
+        salad1 = (ImageView) getView().findViewById(R.id.salad1);
+        salad1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                view.startAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.animation));
+                FoodInfo fragment = new FoodInfo();
+                FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.setCustomAnimations(R.animator.my_fade_in, R.animator.my_fade_out);
+                fragmentTransaction.add(R.id.fl_wrapper, fragment, "INFO");
                 fragmentTransaction.commit();
             }
         });
