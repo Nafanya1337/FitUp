@@ -184,83 +184,39 @@
                     android:scrollbarSize="0dp"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
-
-                    <LinearLayout
-                        android:id="@+id/breakfast"
-                        android:visibility="visible"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
 
                         <ImageView
-                            android:id="@+id/breakfast1"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="15dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginBottom="20dp"
-                            android:scaleX="1.5"
-                            android:scaleY="1.5"
-                            android:src="@drawable/salad_card" />
-
-                        <ImageView
-                            android:id="@+id/brakfast2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:id="@+id/salad1"
+                            android:layout_width="67dp"
+                            android:layout_height="93dp"
                             android:layout_marginStart="25dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginEnd="15dp"
-                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="25dp"
+                            android:layout_marginEnd="25dp"
+                            android:layout_marginBottom="25dp"
                             android:scaleX="1.5"
                             android:scaleY="1.5"
-                            android:src="@drawable/cake_card" />
+                            android:src="@drawable/desset_bg"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                        <ImageView
-                            android:id="@+id/breakfast6"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="15dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginBottom="20dp"
-                            android:scaleX="1.5"
-                            android:scaleY="1.5"
-                            android:src="@drawable/salad_card" />
-
-                        <ImageView
-                            android:id="@+id/brakfast3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="25dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginEnd="15dp"
-                            android:layout_marginBottom="20dp"
-                            android:scaleX="1.5"
-                            android:scaleY="1.5"
-                            android:src="@drawable/cake_card" />
-
-                        <ImageView
-                            android:id="@+id/breakfast4"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginStart="15dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginBottom="20dp"
-                            android:scaleX="1.5"
-                            android:scaleY="1.5"
-                            android:src="@drawable/salad_card" />
-
-                        <ImageView
-                            android:id="@+id/brakfast5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="25dp"
-                            android:layout_marginTop="20dp"
-                            android:layout_marginEnd="15dp"
-                            android:layout_marginBottom="20dp"
-                            android:scaleX="1.5"
-                            android:scaleY="1.5"
-                            android:src="@drawable/cake_card" />
-
-                    </LinearLayout>
+                        <TextView
+                            android:id="@+id/salad1text"
+                            android:layout_width="75dp"
+                            android:layout_height="27dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Блинчики"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/salad1"
+                            app:layout_constraintEnd_toEndOf="@+id/salad1"
+                            app:layout_constraintHorizontal_bias="0.37"
+                            app:layout_constraintStart_toStartOf="@+id/salad1" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
                 </HorizontalScrollView>
 
                 <HorizontalScrollView

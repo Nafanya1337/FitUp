@@ -78,7 +78,6 @@ public class FoodFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         FindAll(); // чисто находим все элементики которые добавили
-        MakeBreakfast(); // создаем расписание на зватрак
         MakeDinner();
         MakeLunchFirst();
         //MakeLunchSecond();
@@ -97,8 +96,6 @@ public class FoodFragment extends Fragment {
 
     public void FindAll(){
 
-        breakfast = (LinearLayout) getView().findViewById(R.id.breakfast);
-        b0 = (TextView) getView().findViewById(R.id.breakfast_null);
 
         dinner = (LinearLayout) getView().findViewById(R.id.dinner);
         d0 = (TextView) getView().findViewById(R.id.dinner_null);
@@ -181,8 +178,8 @@ public class FoodFragment extends Fragment {
         }
 
         if (flag==false){
-            b0.setVisibility(View.VISIBLE);
-            breakfast.setVisibility(View.INVISIBLE);
+            b0.setVisibility(View.INVISIBLE);
+            breakfast.setVisibility(View.VISIBLE);
         }
     }
 

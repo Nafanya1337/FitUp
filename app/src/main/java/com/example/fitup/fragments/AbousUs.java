@@ -4,12 +4,15 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 import com.example.fitup.R;
 
@@ -24,6 +27,8 @@ public class AbousUs extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
+
+    private ImageView git,vk,tg;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -60,31 +65,42 @@ public class AbousUs extends Fragment {
         }
     }
 
-    public void openGit(View view){
-        String str = "https://github.com/Nafanya1337";
-        view.startAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.animation));
-        Intent google = new Intent(Intent.ACTION_VIEW, Uri.parse(str));
-        startActivity(google);
-    }
-
-    public void openVK(View view){
-        String str = "https://vk.com/nfnaaa";
-        view.startAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.animation));
-        Intent google = new Intent(Intent.ACTION_VIEW, Uri.parse(str));
-        startActivity(google);
-    }
-
-    public void openTG(View view){
-        String str = "https://t.me/m_if0";
-        view.startAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.animation));
-        Intent google = new Intent(Intent.ACTION_VIEW, Uri.parse(str));
-        startActivity(google);
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_abous_us, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+        vk = (ImageView) getView().findViewById(R.id.vk);
+        tg = (ImageView) getView().findViewById(R.id.tg);
+        git = (ImageView) getView().findViewById(R.id.git);
+
+        vk.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://vk.com/nfnaaa"));
+                startActivity(browserIntent);
+            }
+        });
+
+        tg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://t.me/m_if0"));
+                startActivity(browserIntent);
+            }
+        });
+
+        git.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/Nafanya1337"));
+                startActivity(browserIntent);
+            }
+        });
     }
 }
