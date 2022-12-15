@@ -22,10 +22,9 @@ import android.widget.TextView;
 import com.example.fitup.R;
 
 public class FoodInfo extends Fragment {
-    ImageView close, search;
-    TextView food;
-
-
+    ImageView close, search, salad1;
+    TextView food, text;
+    String title;
     private FoodInfoViewModel mViewModel;
 
     public static FoodInfo newInstance() {
@@ -51,8 +50,12 @@ public class FoodInfo extends Fragment {
                 fragmentTransaction.commit();
             }
         });
-        food = (TextView) getView().findViewById(R.id.food);
-        String str = "http://www.google.com/search?q=как готовить " + food.getText();
+        food = (TextView) getView().findViewById(R.id.title);
+        text = (TextView) getView().findViewById(R.id.text);
+        Bundle bundle = this.getArguments();
+        title = bundle.getString("tittle");
+        makeText();
+        String str = "http://www.google.com/search?q=как готовить " + title;
         search = (ImageView) getView().findViewById(R.id.search);
         search.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,6 +66,22 @@ public class FoodInfo extends Fragment {
             }
         });
         super.onViewCreated(view, savedInstanceState);
+    }
+
+
+    public void makeText(){
+        switch (title){
+            case "Борщ":
+                text.setText("Знаменитый красный борщ любят за особенный аромат, удивительный вкус и насыщенный цвет. Идеальное сочетание овощей придают красному борщу тот индивидуальный вкус, благодаря которому он входит в список самых известных супов мира.");
+                break;
+            case "Куриный суп":
+                text.setText("Очень сытный, нежный и ароматный куриный суп,\nне требующий много времени для приготовления. Рецепт супа с плавленым сыром очень прост,\nно замечательный вкус супчика оценят даже злостные\n«нелюбители» первых блюд.");
+                break;
+            case "Щи":
+                text.setText("Щи – национальное русское блюдо. Отличаются кислым вкусом, создаваемым квашеной капустой, обычно используемой в щах.");
+                break;
+        }
+        food.setText(title);
     }
 
     @Override

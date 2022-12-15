@@ -37,7 +37,7 @@
             app:layout_constraintTop_toTopOf="@+id/imageView7" />
 
         <TextView
-            android:id="@+id/food"
+            android:id="@+id/title"
             android:layout_width="314dp"
             android:layout_height="90dp"
             android:layout_marginStart="40dp"
@@ -66,13 +66,13 @@
             android:layout_marginBottom="62dp"
             android:clickable="true"
             android:src="@drawable/close_btn"
-            app:layout_constraintBottom_toTopOf="@+id/textView17"
+            app:layout_constraintBottom_toTopOf="@+id/text"
             app:layout_constraintEnd_toEndOf="@+id/imageView7"
             app:layout_constraintStart_toStartOf="@+id/imageView7"
             app:layout_constraintTop_toTopOf="@+id/imageView7" />
 
         <TextView
-            android:id="@+id/textView17"
+            android:id="@+id/text"
             android:layout_width="342dp"
             android:layout_height="96dp"
             android:layout_marginStart="92dp"
@@ -81,11 +81,11 @@
             android:fontFamily="@font/poppins_regular"
             android:text="text"
             android:textColor="@color/black"
-            app:layout_constraintBottom_toTopOf="@+id/food"
+            app:layout_constraintBottom_toTopOf="@id/title"
             app:layout_constraintEnd_toEndOf="@+id/imageView7"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/imageView7"
-            app:layout_constraintTop_toBottomOf="@+id/food"
+            app:layout_constraintTop_toBottomOf="@id/text"
             app:layout_constraintVertical_bias="0.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 

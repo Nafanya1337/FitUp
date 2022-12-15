@@ -28,208 +28,6 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout3"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
-
-            <ImageView
-                android:id="@+id/salad9"
-                android:layout_width="94dp"
-                android:layout_height="112dp"
-                android:layout_marginStart="130dp"
-                android:layout_marginTop="20dp"
-                android:scaleX="1.25"
-                android:scaleY="1.25"
-                android:src="@drawable/salad_bg"
-                app:layout_constraintStart_toStartOf="@id/salad8"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/salad9text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Цезарь"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                app:layout_constraintBottom_toBottomOf="@+id/salad9"
-                app:layout_constraintEnd_toEndOf="@+id/salad9"
-                app:layout_constraintStart_toStartOf="@+id/salad9"
-                app:layout_constraintTop_toTopOf="@+id/salad9"
-                app:layout_constraintVertical_bias="1.0" />
-
-            <ImageView
-                android:id="@+id/salad8"
-                android:layout_width="94dp"
-                android:layout_height="114dp"
-                android:layout_marginStart="130dp"
-                android:layout_marginTop="20dp"
-                android:scaleX="1.25"
-                android:scaleY="1.25"
-                android:src="@drawable/salad_bg"
-                app:layout_constraintStart_toStartOf="@id/salad7"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/salad8text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Цезарь"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                app:layout_constraintBottom_toBottomOf="@+id/salad8"
-                app:layout_constraintEnd_toEndOf="@+id/salad8"
-                app:layout_constraintStart_toStartOf="@+id/salad8"
-                app:layout_constraintTop_toTopOf="@+id/salad8"
-                app:layout_constraintVertical_bias="1.0" />
-
-            <ImageView
-                android:id="@+id/salad7"
-                android:layout_width="94dp"
-                android:layout_height="114dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"
-                android:scaleX="1.25"
-                android:scaleY="1.25"
-                android:src="@drawable/salad_bg"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/salad7text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Цезарь"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                app:layout_constraintBottom_toBottomOf="@+id/salad7"
-                app:layout_constraintEnd_toEndOf="@+id/salad7"
-                app:layout_constraintStart_toStartOf="@+id/salad7"
-                app:layout_constraintTop_toTopOf="@+id/salad7"
-                app:layout_constraintVertical_bias="1.0" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout2"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
-
-            <ImageView
-                android:id="@+id/salad6"
-                android:layout_width="94dp"
-                android:layout_height="112dp"
-                android:layout_marginStart="130dp"
-                android:layout_marginTop="20dp"
-                android:scaleX="1.25"
-                android:scaleY="1.25"
-                android:src="@drawable/salad_bg"
-                app:layout_constraintStart_toStartOf="@id/salad5"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/salad6text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Цезарь"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                app:layout_constraintBottom_toBottomOf="@+id/salad6"
-                app:layout_constraintEnd_toEndOf="@+id/salad6"
-                app:layout_constraintStart_toStartOf="@+id/salad6"
-                app:layout_constraintTop_toTopOf="@+id/salad6"
-                app:layout_constraintVertical_bias="1.0" />
-
-            <ImageView
-                android:id="@+id/salad5"
-                android:layout_width="94dp"
-                android:layout_height="114dp"
-                android:layout_marginStart="130dp"
-                android:layout_marginTop="20dp"
-                android:scaleX="1.25"
-                android:scaleY="1.25"
-                android:src="@drawable/salad_bg"
-                app:layout_constraintStart_toStartOf="@id/salad4"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/salad5text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Цезарь"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                app:layout_constraintBottom_toBottomOf="@+id/salad5"
-                app:layout_constraintEnd_toEndOf="@+id/salad5"
-                app:layout_constraintStart_toStartOf="@+id/salad5"
-                app:layout_constraintTop_toTopOf="@+id/salad5"
-                app:layout_constraintVertical_bias="1.0" />
-
-            <ImageView
-                android:id="@+id/salad4"
-                android:layout_width="94dp"
-                android:layout_height="114dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"
-                android:scaleX="1.25"
-                android:scaleY="1.25"
-                android:src="@drawable/salad_bg"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/salad4text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Цезарь"
-                android:textColor="@color/black"
-                android:textSize="20dp"
-                app:layout_constraintBottom_toBottomOf="@+id/salad4"
-                app:layout_constraintEnd_toEndOf="@+id/salad4"
-                app:layout_constraintStart_toStartOf="@+id/salad4"
-                app:layout_constraintTop_toTopOf="@+id/salad4"
-                app:layout_constraintVertical_bias="1.0" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
             android:layout_height="150dp"
@@ -259,14 +57,16 @@
                 android:layout_marginEnd="12dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/poppins_regular"
-                android:text="Цезарь"
+                android:gravity="center"
+                android:text="Салат\nс овощами\nи яйцом"
                 android:textColor="@color/black"
-                android:textSize="20dp"
+                android:textSize="15dp"
                 app:layout_constraintBottom_toBottomOf="@+id/salad3"
                 app:layout_constraintEnd_toEndOf="@+id/salad3"
+                app:layout_constraintHorizontal_bias="0.555"
                 app:layout_constraintStart_toStartOf="@+id/salad3"
                 app:layout_constraintTop_toTopOf="@+id/salad3"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintVertical_bias="0.228" />
 
             <ImageView
                 android:id="@+id/salad2"
@@ -289,7 +89,7 @@
                 android:layout_marginEnd="12dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/poppins_regular"
-                android:text="Цезарь"
+                android:text="Фитнес"
                 android:textColor="@color/black"
                 android:textSize="20dp"
                 app:layout_constraintBottom_toBottomOf="@+id/salad2"

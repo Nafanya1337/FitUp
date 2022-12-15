@@ -1,5 +1,7 @@
 package com.example.fitup.fragments;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -7,6 +9,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.AnimationUtils;
 
 import com.example.fitup.R;
 
@@ -55,6 +58,27 @@ public class AbousUs extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+    }
+
+    public void openGit(View view){
+        String str = "https://github.com/Nafanya1337";
+        view.startAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.animation));
+        Intent google = new Intent(Intent.ACTION_VIEW, Uri.parse(str));
+        startActivity(google);
+    }
+
+    public void openVK(View view){
+        String str = "https://vk.com/nfnaaa";
+        view.startAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.animation));
+        Intent google = new Intent(Intent.ACTION_VIEW, Uri.parse(str));
+        startActivity(google);
+    }
+
+    public void openTG(View view){
+        String str = "https://t.me/m_if0";
+        view.startAnimation(AnimationUtils.loadAnimation(getActivity(), R.anim.animation));
+        Intent google = new Intent(Intent.ACTION_VIEW, Uri.parse(str));
+        startActivity(google);
     }
 
     @Override

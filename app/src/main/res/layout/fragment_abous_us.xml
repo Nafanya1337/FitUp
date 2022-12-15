@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.AbousUs"
-    android:background="@color/bg_color">
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/back2"
+        android:layout_width="106dp"
+        android:layout_height="51dp"
+        app:srcCompat="@drawable/button_back"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="605dp"/>
 
     <TextView
         android:id="@+id/textView9"
@@ -12,7 +21,35 @@
         android:layout_height="wrap_content"
         android:text="@string/about_us_info"
         android:textSize="20dp"
+        android:layout_marginTop="200dp"
         android:fontFamily="@font/poppins_regular"
         android:textColor="@color/black"
-        android:gravity="left"/>
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="109dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="490dp"
+        android:layout_height="112dp"
+        android:onClick="openGit"
+        android:src="@drawable/github_logo_png_7" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="96dp"
+        android:layout_height="103dp"
+        android:layout_marginLeft="20dp"
+        android:onClick="openTG"
+        android:layout_marginTop="495dp"
+        android:src="@drawable/telegram_logo_svg" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="110dp"
+        android:layout_height="113dp"
+        android:layout_marginLeft="290dp"
+        android:layout_marginTop="490dp"
+        android:onClick="openVK"
+        android:src="@drawable/pngegg" />
 </FrameLayout>

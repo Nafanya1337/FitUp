@@ -1,5 +1,8 @@
 package com.example.fitup.fragments;
 
+import static android.content.Intent.getIntent;
+
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -22,7 +25,9 @@ import com.example.fitup.R;
  * create an instance of this fragment.
  */
 public class FoodSoups extends Fragment {
-    ImageView back;
+    ImageView back, salad1, salad2, salad3;
+    ImageView img;
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -80,6 +85,82 @@ public class FoodSoups extends Fragment {
                 fragmentTransaction.commit();
             }
         });
+
+        salad1 = (ImageView) getView().findViewById(R.id.salad1);
+        salad1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                bundle.putString("tittle", "Борщ"); // Put anything what you want
+
+                FoodInfo fragment2 = new FoodInfo();
+                fragment2.setArguments(bundle);
+
+                getFragmentManager()
+                        .beginTransaction()
+                        .add(R.id.fl_wrapper, fragment2, "INFO")
+                        .commit();
+            }
+        });
+
+        salad2 = (ImageView) getView().findViewById(R.id.salad2);
+        salad2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                bundle.putString("tittle", "Куриный суп"); // Put anything what you want
+
+                FoodInfo fragment2 = new FoodInfo();
+                fragment2.setArguments(bundle);
+
+                getFragmentManager()
+                        .beginTransaction()
+                        .add(R.id.fl_wrapper, fragment2, "INFO")
+                        .commit();
+            }
+        });
+
+        salad3 = (ImageView) getView().findViewById(R.id.salad3);
+        salad3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Bundle bundle = new Bundle();
+                bundle.putString("tittle", "Щи"); // Put anything what you want
+
+                FoodInfo fragment2 = new FoodInfo();
+                fragment2.setArguments(bundle);
+
+                getFragmentManager()
+                        .beginTransaction()
+                        .add(R.id.fl_wrapper, fragment2, "INFO")
+                        .commit();
+            }
+        });
+    }
+
+    public void openSoup(){
+        return;
+        /*String name = "";
+        if (view.getId() == R.id.salad1){
+            name = "Борщ";
+        }
+        if (view.getId() == R.id.salad2){
+            name = "Куриный суп";
+        }
+        if (view.getId() == R.id.salad3){
+            name = "Щи";
+        }
+        Bundle bundle = new Bundle();
+        bundle.putString("tittle", name); // Put anything what you want
+
+        FoodInfo fragment2 = new FoodInfo();
+        fragment2.setArguments(bundle);
+
+        getFragmentManager()
+                .beginTransaction()
+                .add(R.id.fl_wrapper, fragment2)
+                .commit();
+*/
     }
 
     @Override

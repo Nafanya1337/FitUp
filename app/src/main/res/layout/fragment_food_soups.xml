@@ -26,208 +26,6 @@
             android:textSize="30dp" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout3"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="20dp">
-
-            <ImageView
-                android:id="@+id/salad9"
-                app:layout_constraintStart_toStartOf="@id/salad8"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_width="94dp"
-                android:layout_height="112dp"
-                android:layout_marginStart="130dp"
-                android:layout_marginTop="20dp"
-                android:scaleX="1.25"
-                android:scaleY="1.25"
-                android:src="@drawable/soup_bg" />
-
-            <TextView
-                android:id="@+id/salad9text"
-                app:layout_constraintBottom_toBottomOf="@+id/salad9"
-                app:layout_constraintEnd_toEndOf="@+id/salad9"
-                app:layout_constraintStart_toStartOf="@+id/salad9"
-                app:layout_constraintTop_toTopOf="@+id/salad9"
-                app:layout_constraintVertical_bias="1.0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Борщ"
-                android:textColor="@color/black"
-                android:textSize="20dp" />
-
-            <ImageView
-                android:id="@+id/salad8"
-                app:layout_constraintStart_toStartOf="@id/salad7"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_width="94dp"
-                android:layout_height="114dp"
-                android:layout_marginStart="130dp"
-                android:layout_marginTop="20dp"
-                android:scaleX="1.25"
-                android:scaleY="1.25"
-                android:src="@drawable/soup_bg" />
-
-            <TextView
-                android:id="@+id/salad8text"
-                app:layout_constraintBottom_toBottomOf="@+id/salad8"
-                app:layout_constraintEnd_toEndOf="@+id/salad8"
-                app:layout_constraintStart_toStartOf="@+id/salad8"
-                app:layout_constraintTop_toTopOf="@+id/salad8"
-                app:layout_constraintVertical_bias="1.0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Борщ"
-                android:textColor="@color/black"
-                android:textSize="20dp" />
-
-            <ImageView
-                android:id="@+id/salad7"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_width="94dp"
-                android:layout_height="114dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"
-                android:scaleX="1.25"
-                android:scaleY="1.25"
-                android:src="@drawable/soup_bg" />
-
-            <TextView
-                android:id="@+id/salad7text"
-                app:layout_constraintBottom_toBottomOf="@+id/salad7"
-                app:layout_constraintEnd_toEndOf="@+id/salad7"
-                app:layout_constraintStart_toStartOf="@+id/salad7"
-                app:layout_constraintTop_toTopOf="@+id/salad7"
-                app:layout_constraintVertical_bias="1.0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Борщ"
-                android:textColor="@color/black"
-                android:textSize="20dp" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout2"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginTop="20dp">
-
-            <ImageView
-                android:id="@+id/salad6"
-                app:layout_constraintStart_toStartOf="@id/salad5"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_width="94dp"
-                android:layout_height="112dp"
-                android:layout_marginStart="130dp"
-                android:layout_marginTop="20dp"
-                android:scaleX="1.25"
-                android:scaleY="1.25"
-                android:src="@drawable/soup_bg" />
-
-            <TextView
-                android:id="@+id/salad6text"
-                app:layout_constraintBottom_toBottomOf="@+id/salad6"
-                app:layout_constraintEnd_toEndOf="@+id/salad6"
-                app:layout_constraintStart_toStartOf="@+id/salad6"
-                app:layout_constraintTop_toTopOf="@+id/salad6"
-                app:layout_constraintVertical_bias="1.0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Борщ"
-                android:textColor="@color/black"
-                android:textSize="20dp" />
-
-            <ImageView
-                android:id="@+id/salad5"
-                app:layout_constraintStart_toStartOf="@id/salad4"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_width="94dp"
-                android:layout_height="114dp"
-                android:layout_marginStart="130dp"
-                android:layout_marginTop="20dp"
-                android:scaleX="1.25"
-                android:scaleY="1.25"
-                android:src="@drawable/soup_bg" />
-
-            <TextView
-                android:id="@+id/salad5text"
-                app:layout_constraintBottom_toBottomOf="@+id/salad5"
-                app:layout_constraintEnd_toEndOf="@+id/salad5"
-                app:layout_constraintStart_toStartOf="@+id/salad5"
-                app:layout_constraintTop_toTopOf="@+id/salad5"
-                app:layout_constraintVertical_bias="1.0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Борщ"
-                android:textColor="@color/black"
-                android:textSize="20dp" />
-
-            <ImageView
-                android:id="@+id/salad4"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:layout_width="94dp"
-                android:layout_height="114dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="20dp"
-                android:scaleX="1.25"
-                android:scaleY="1.25"
-                android:src="@drawable/soup_bg" />
-
-            <TextView
-                android:id="@+id/salad4text"
-                app:layout_constraintBottom_toBottomOf="@+id/salad4"
-                app:layout_constraintEnd_toEndOf="@+id/salad4"
-                app:layout_constraintStart_toStartOf="@+id/salad4"
-                app:layout_constraintTop_toTopOf="@+id/salad4"
-                app:layout_constraintVertical_bias="1.0"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
-                android:layout_marginTop="70dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="10dp"
-                android:fontFamily="@font/poppins_regular"
-                android:text="Борщ"
-                android:textColor="@color/black"
-                android:textSize="20dp" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -245,7 +43,9 @@
                 android:layout_marginStart="130dp"
                 android:layout_marginTop="20dp"
                 android:scaleX="1.25"
+                android:clickable="true"
                 android:scaleY="1.25"
+                android:onClick="openSoup"
                 android:src="@drawable/soup_bg" />
 
             <TextView
@@ -262,7 +62,7 @@
                 android:layout_marginEnd="12dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/poppins_regular"
-                android:text="Борщ"
+                android:text="Щи"
                 android:textColor="@color/black"
                 android:textSize="20dp" />
 
@@ -276,6 +76,7 @@
                 android:layout_marginTop="20dp"
                 android:scaleX="1.25"
                 android:scaleY="1.25"
+                android:onClick="openSoup"
                 android:src="@drawable/soup_bg" />
 
             <TextView
@@ -292,7 +93,7 @@
                 android:layout_marginEnd="12dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/poppins_regular"
-                android:text="Борщ"
+                android:text="Куриный"
                 android:textColor="@color/black"
                 android:textSize="20dp" />
 
@@ -323,6 +124,7 @@
                 android:scaleX="1.25"
                 android:scaleY="1.25"
                 android:src="@drawable/soup_bg"
+                android:clickable="true"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 

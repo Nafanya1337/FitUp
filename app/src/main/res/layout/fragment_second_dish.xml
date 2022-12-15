@@ -87,11 +87,6 @@
 
             <TextView
                 android:id="@+id/salad2text"
-                app:layout_constraintBottom_toBottomOf="@+id/salad2"
-                app:layout_constraintEnd_toEndOf="@+id/salad2"
-                app:layout_constraintStart_toStartOf="@+id/salad2"
-                app:layout_constraintTop_toTopOf="@+id/salad2"
-                app:layout_constraintVertical_bias="1.0"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
@@ -99,9 +94,16 @@
                 android:layout_marginEnd="12dp"
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/poppins_regular"
-                android:text="Стейк"
+                android:gravity="center"
+                android:text="Куриная\nгрудка"
                 android:textColor="@color/black"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/salad2"
+                app:layout_constraintEnd_toEndOf="@+id/salad2"
+                app:layout_constraintHorizontal_bias="0.666"
+                app:layout_constraintStart_toStartOf="@+id/salad2"
+                app:layout_constraintTop_toTopOf="@+id/salad2"
+                app:layout_constraintVertical_bias="0.285" />
 
             <TextView
                 android:id="@+id/salad1text"
