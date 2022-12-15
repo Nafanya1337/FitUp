@@ -14,10 +14,8 @@
 
 [__Stable version 0.0.1 (Pre-Alpha)__](https://github.com/Nafanya1337/FitUp/tree/FitUp_stable)
 
-## Developers
+## Developer
 
-- [Ivan](https://github.com/A1rLie)
-- [Nikolay](https://github.com/Papagrand)
 - [Fedor](https://github.com/Nafanya1337)
 
 ## License
